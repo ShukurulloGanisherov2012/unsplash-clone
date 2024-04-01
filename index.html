@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unsplash</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container p-sm-5 p-3 text-center">
+        <h1 class="text-center text-success display-3 ">Search Images App</h1>
+        <h1 class="text-center text-warning display-3 ">Unsplash clone</h1>
+
+        <form id="searchForm" class="d-flex justify-content-center w-100 my-5">
+            <div class="form-group w-md-50 w-100">
+                <input type="text" class="form-control font-monospace fs-4" id="search-input" aria-describedby="emailHelp"
+                    placeholder="Enter Image URL" style="height: 50px;"/>
+            </div>
+            <button id="searchButton" type="submit" class="btn btn-danger fs-4 d-flex justify-content-center align-items-center " style="height: 50px;width: 100px;">Search</button>
+        </form>
+
+        <main id="resultsContainer" class="row"></main>
+        <div>
+            <button id="showmore" class="btn btn-primary">Show more</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
